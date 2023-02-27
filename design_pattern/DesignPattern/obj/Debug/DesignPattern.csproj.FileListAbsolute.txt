@@ -1,0 +1,8 @@
+C:\Users\YB826BP\OneDrive - EY\Desktop\design_pattern\DesignPattern\bin\Debug\DesignPattern.exe.config
+C:\Users\YB826BP\OneDrive - EY\Desktop\design_pattern\DesignPattern\bin\Debug\DesignPattern.exe
+C:\Users\YB826BP\OneDrive - EY\Desktop\design_pattern\DesignPattern\bin\Debug\DesignPattern.pdb
+C:\Users\YB826BP\OneDrive - EY\Desktop\design_pattern\DesignPattern\obj\Debug\DesignPattern.csproj.AssemblyReference.cache
+C:\Users\YB826BP\OneDrive - EY\Desktop\design_pattern\DesignPattern\obj\Debug\DesignPattern.csproj.SuggestedBindingRedirects.cache
+C:\Users\YB826BP\OneDrive - EY\Desktop\design_pattern\DesignPattern\obj\Debug\DesignPattern.csproj.CoreCompileInputs.cache
+C:\Users\YB826BP\OneDrive - EY\Desktop\design_pattern\DesignPattern\obj\Debug\DesignPattern.exe
+C:\Users\YB826BP\OneDrive - EY\Desktop\design_pattern\DesignPattern\obj\Debug\DesignPattern.pdb

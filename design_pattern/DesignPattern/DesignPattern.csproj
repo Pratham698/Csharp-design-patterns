@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{12DBEF25-0728-410F-ABCD-B81299C8E40D}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>DesignPattern</RootNamespace>
+    <AssemblyName>DesignPattern</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbstractFactoryPattern\Cat.cs" />
+    <Compile Include="AbstractFactoryPattern\Dog.cs" />
+    <Compile Include="AbstractFactoryPattern\Lion.cs" />
+    <Compile Include="AbstractFactoryPattern\Octopus.cs" />
+    <Compile Include="AbstractFactoryPattern\SeaAnimalFactory.cs" />
+    <Compile Include="AbstractFactoryPattern\IAnimal.cs" />
+    <Compile Include="AbstractFactoryPattern\AnimalFactory.cs" />
+    <Compile Include="AbstractFactoryPattern\LandAnimalFactory.cs" />
+    <Compile Include="AbstractFactoryPattern\Shark.cs" />
+    <Compile Include="AdapterPattern\ChemicalDatabank.cs" />
+    <Compile Include="AdapterPattern\Compound.cs" />
+    <Compile Include="AdapterPattern\RichCompound.cs" />
+    <Compile Include="BuilderPattern\IToyBuilder.cs" />
+    <Compile Include="BuilderPattern\Toy.cs" />
+    <Compile Include="BuilderPattern\ToyABuilder.cs" />
+    <Compile Include="BuilderPattern\ToyBBuilder.cs" />
+    <Compile Include="BuilderPattern\ToyCreator.cs" />
+    <Compile Include="DependencyInversionPrinciple\DataAccessFactory.cs" />
+    <Compile Include="DependencyInversionPrinciple\WorkerBriefDetail.cs" />
+    <Compile Include="DependencyInversionPrinciple\WorkerBusinessLogic.cs" />
+    <Compile Include="DependencyInversionPrinciple\IWorkerDataAccessLogic.cs" />
+    <Compile Include="DependencyInversionPrinciple\Worker.cs" />
+    <Compile Include="DependencyInversionPrinciple\WorkerDataAccessLogic.cs" />
+    <Compile Include="FactoryPattern\Bike.cs" />
+    <Compile Include="FactoryPattern\Car.cs" />
+    <Compile Include="FactoryPattern\IVehicle.cs" />
+    <Compile Include="FactoryPattern\VehicleFactory.cs" />
+    <Compile Include="IteratorPattern\ConcreteCollection.cs" />
+    <Compile Include="IteratorPattern\Employee.cs" />
+    <Compile Include="IteratorPattern\IAbstractCollection.cs" />
+    <Compile Include="IteratorPattern\IAbstractIterator.cs" />
+    <Compile Include="IteratorPattern\Iterator.cs" />
+    <Compile Include="ObserverPattern\IObserver.cs" />
+    <Compile Include="ObserverPattern\ISubject.cs" />
+    <Compile Include="ObserverPattern\Observer.cs" />
+    <Compile Include="ObserverPattern\Subject.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StatePattern\ATMMachine.cs" />
+    <Compile Include="StatePattern\DebitCardInsertedState.cs" />
+    <Compile Include="StatePattern\DebitCardNotInsertedState.cs" />
+    <Compile Include="StatePattern\IATMState.cs" />
+    <Compile Include="StrategyPattern\BikeStrategy.cs" />
+    <Compile Include="StrategyPattern\CarStrategy.cs" />
+    <Compile Include="StrategyPattern\IStrategy.cs" />
+    <Compile Include="StrategyPattern\TravelStrategy.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
